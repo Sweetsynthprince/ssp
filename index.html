@@ -20,11 +20,36 @@
     <style type="text/css">
       #mc_embed_signup{ background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
       body {text-align:center;}
-      @keyframes rotate {
-        from {transform: rotateY(0deg);}
-        to {transform: rotateY(180deg):}
+      @-webkit-keyframes rotate {
+        0% {transform: rotateY(0deg);}
+        50% {transform: rotateY(180deg);}
+        100% {transform: rotateY(0deg);}
       }
-      .logo {animation-name: rotate; animation-duration: 2s; }
+
+      @-moz-keyframes rotate {
+        0% {transform: rotateY(0deg);}
+        50% {transform: rotateY(180deg);}
+        100% {transform: rotateY(0deg);}
+      }
+
+      @-o-keyframes rotate {
+        0% {transform: rotateY(0deg);}
+        50% {transform: rotateY(180deg);}
+        100% {transform: rotateY(0deg);}
+      }
+
+      @keyframes rotate {
+        0% {transform: rotateY(0deg);}
+        50% {transform: rotateY(180deg);}
+        100% {transform: rotateY(0deg);}
+      }
+
+      .logo {
+        -webkit-animation: rotate 3s linear infinite alternate;
+        -moz-animation: rotate 3s linear infinite alternate;
+        -o-animation: rotate 3s linear infinite alternate;
+        animation: rotate 3s linear infinite alternate;
+      }
     </style>
   </head>
 
