@@ -1,7 +1,7 @@
 var x = 0;
 var offset = 0;
 var frequency = 0.25;
-var amplitude = 0;
+var amplitude = 0.1;
 var framerate = 50;
 var increment = 5;
 var waveElems = document.querySelectorAll('.sine-wave');
@@ -69,7 +69,7 @@ window.onscroll = function() {
 	var sy = window.scrollY;
 	
 	if(sy<320) {
-		amplitude = sy/200;
+		amplitude = Math.max(sy/200, 0.1);
 		separation = Math.max(window.scrollY/10, 10);
 	}
 
