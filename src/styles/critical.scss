@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Raleway');
+
+body {
+	background-color: #fff;
+	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
+	text-align: center;
+}
+
+.wrap {
+	background-color: black;
+	height: 100vh;
+	position: relative;
+}
+
+.main-title {
+	color: #fff;
+	font-family: 'Monoton', cursive;
+	font-size: 70px;
+	left: 0;
+	line-height: 100px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: calc(50vh - 50px);
+	z-index: 1;
+}
+
+.svg {
+	left: 0;
+	overflow: visible;
+	position: absolute;
+	right: 0;
+	top: calc(50vh - 50px);
+	z-index: 10;
+}
+
+.sine-wave {
+	fill: transparent;
+	stroke: white;
+	stroke-width: 3;
+}
