@@ -55,14 +55,18 @@
 @-o-keyframes scrollbg { @include scrollbgframes(); }
 @keyframes scrollbg { @include scrollbgframes(); }
 
-@for $x from 0 through 9 {
-	.wave#{$x} {
-		// animation: colorwave#{$x} 2s infinite linear;
-		animation-delay: $x*50ms;
-	}
-}
+// @for $x from 0 through 9 {
+// 	.wave#{$x} {
+// 		// animation: colorwave#{$x} 2s infinite linear;
+// 		animation-delay: $x*50ms;
+// 	}
+// }
 
 .sine-wave-active {
+	animation: colorwave 2s infinite linear;
+}
+
+.sine-wave {
 	animation: colorwave 2s infinite linear;
 }
 

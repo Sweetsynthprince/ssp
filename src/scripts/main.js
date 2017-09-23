@@ -1,9 +1,9 @@
 var x = 0;
 var offset = 0;
-var frequency = 0.25;
-var amplitude = 0;
-var framerate = 50;
-var increment = 5;
+var frequency = 0.15;
+var amplitude = .05;
+var framerate = 60;
+var increment = 1;
 var waveElems = document.querySelectorAll('.sine-wave');
 var separation = 10;
 var wavelength = window.innerWidth;
@@ -41,7 +41,7 @@ function createGraph(wave, idx) {
 				point.y
 			]
 		});
-		x += 1;
+		x += 5;
 	}
 	wave.setPathData(data);
 };
@@ -52,9 +52,7 @@ function animate () {
 	for(i=0; i<waveElems.length; i++) {
 		createGraph(waveElems[i], i);
 	}
-	setTimeout(function () {
-		requestAnimationFrame(animate);	
-	},(1000 / framerate));
+	requestAnimationFrame(animate);	
 }
 
 // window.onscroll = function() {
@@ -67,18 +65,17 @@ function animate () {
 
 window.onscroll = function() {
 	var sy = window.scrollY;
-	
-	if(sy<320) {
-		amplitude = sy/200;
+	if(sy<400) {
+		amplitude = Math.max(sy/200, 0.05);
 		separation = Math.max(window.scrollY/10, 10);
 	}
 
-	if(sy > 0 && !scrollInit) {
-		scrollInit = true;
-		[].map.call(document.querySelectorAll('.sine-wave'), function(el) {
-			el.classList.add('sine-wave-active');
-		});
-	}
+	// if(sy > 0 && !scrollInit) {
+	// 	scrollInit = true;
+	// 	[].map.call(document.querySelectorAll('.sine-wave'), function(el) {
+	// 		el.classList.add('sine-wave-active');
+	// 	});
+	// }
 };
 
 window.onresize = function() {

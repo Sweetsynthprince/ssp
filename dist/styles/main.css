@@ -197,37 +197,10 @@ button {
   to {
     background-position: 100% 0; } }
 
-.wave0 {
-  animation-delay: 0ms; }
-
-.wave1 {
-  animation-delay: 50ms; }
-
-.wave2 {
-  animation-delay: 100ms; }
-
-.wave3 {
-  animation-delay: 150ms; }
-
-.wave4 {
-  animation-delay: 200ms; }
-
-.wave5 {
-  animation-delay: 250ms; }
-
-.wave6 {
-  animation-delay: 300ms; }
-
-.wave7 {
-  animation-delay: 350ms; }
-
-.wave8 {
-  animation-delay: 400ms; }
-
-.wave9 {
-  animation-delay: 450ms; }
-
 .sine-wave-active {
+  animation: colorwave 2s infinite linear; }
+
+.sine-wave {
   animation: colorwave 2s infinite linear; }
 
 .logo {
