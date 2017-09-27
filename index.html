@@ -15,25 +15,87 @@
 
     <title>Pure Waveform</title>
     
-    <style type="text/css">
-      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-    </style>
-
     <script>
       !function(e){"use strict";var n=function(n,t,o){function i(e){return a.body?e():void setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var s=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=s[s.length-1]}var f=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=f.length;t--;)if(f[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
     </script>
 
     <script src="https://jaromvogel.com/js/lib/path-data-polyfill.js"></script>
-    <style data-inject="critical">@import url("https://fonts.googleapis.com/css?family=Monoton|Raleway");
-body {
-  background-color: #fff;
-  font-family: 'Raleway', sans-serif;
-  overflow-x: hidden;
-  text-align: center; }
+    <style data-inject="critical">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.wrap {
-  background-color: black;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  padding: 0;
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  background-color: #000;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  color: #fff;
+  padding: 0;
+  margin: 0; }
+
+section.splash {
+  padding: 0; }
+
+.splash {
+  background-color: #000;
   height: 100vh;
+  width: 100%;
   position: relative; }
 
 .main-logo {
@@ -45,18 +107,6 @@ body {
 
 .main-logo img {
   width: 100%; }
-
-.main-title {
-  color: #fff;
-  font-family: 'Monoton', cursive;
-  font-size: 70px;
-  left: 0;
-  line-height: 100px;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: calc(50vh - 50px);
-  z-index: 1; }
 
 .svg {
   left: 0;
@@ -81,8 +131,7 @@ body {
 
   <body>
 
-    <section class="wrap">
-      <!-- <h1 class="main-title">PURE WAVEFORM</h1> -->
+    <section class="splash">
       <div class="main-logo">
         <img src="dist/images/ssp-badge2.png" alt="SSP" />
       </div>
@@ -106,8 +155,13 @@ body {
       <iframe id="pills-vid" width="560" height="315" src="https://www.youtube.com/embed/8Ab0Dp5JQxk?rel=0" frameborder="0" allowfullscreen></iframe>
     </section>
 
-    <section class="waves">
-      <h2 class="section-title">Pure Waveform is the definitive sacrality, the highest godhead.</h2>
+    <section class="music">
+      <iframe style="border: 0; width: 350px; height: 753px;" src="https://bandcamp.com/EmbeddedPlayer/album=1606811957/size=large/bgcol=ffffff/linkcol=ed5541/transparent=true/" seamless><a href="http://sweetsynthprince.bandcamp.com/album/sweet-synth-prince">Sweet Synth Prince by Sweet Synth Prince</a></iframe>
+    </section>
+
+    <section class="connect">
+      <h2 class="section-title">Join Us</h2>
+      <p class="section-detail">Some text here about why people should subscribe to your email list. Some text here about why people should subscribe to your email list. Some text here about why people should subscribe to your email list.</p>
 
       <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup">
@@ -123,26 +177,94 @@ body {
       </div>
       <!--End mc_embed_signup--> 
 
+      <a class="music-links" href="">Spotify</a>
+      <a class="music-links" href="">Bandcamp</a>
+      <a class="music-links" href="">YouTube</a>
+    </section>
+
+    <!-- <div class="peek-a-boo">&nbsp;</div> -->
+
+    <section class="waveform">
+      <h2 class="section-title">Pure Waveform is the definitive sacrality, the highest godhead.</h2>
+
+<!--       <div class="gifs-wrap">
+        <div class="gifs-row">
+          <figure class="gif">
+            <img src="dist/images/waves1.gif" />
+            <figcaption>Nonsensical description of this image</figcaption>
+          </figure><figure class="gif">
+            <img src="dist/images/fourier.gif" />
+            <figcaption>Nonsensical description of this image</figcaption>
+          </figure>
+        </div>
+        <div class="gifs-row">
+          <figure class="gif">
+            <img src="dist/images/waves2.gif" />
+            <figcaption>Nonsensical description of this image</figcaption>
+          </figure><figure class="gif">
+            <img src="dist/images/fourier2.gif" />
+            <figcaption>Nonsensical description of this image</figcaption>
+          </figure>
+        </div>
+      </div> -->
+
+    <div class="gifs-wrap">
       <figure>
         <img src="dist/images/waves1.gif" />
+        <figcaption>Nonsensical description of this image</figcaption>
       </figure>
+
       <figure>
-        <img src="dist/images/waves2.gif" />
+        <img src="dist/images/fourier2.gif" />
+        <figcaption>Nonsensical description of this image</figcaption>
       </figure>
-    </section>
 
-    <section class="music">
-      <!-- <iframe style="border: 0; width: 350px; height: 720px;" src="https://bandcamp.com/EmbeddedPlayer/album=403336739/size=large/bgcol=ffffff/linkcol=de270f/transparent=true/" seamless><a href="http://patrickmanian.bandcamp.com/album/randy-ii-seated">Randy ii (Seated) by Patrick Manian</a></iframe> -->
-      <iframe style="border: 0; width: 350px; height: 720px;" src="https://bandcamp.com/EmbeddedPlayer/album=403336739/size=large/bgcol=ffffff/linkcol=ed5541/transparent=false/" seamless><a href="http://patrickmanian.bandcamp.com/album/randy-ii-seated">Randy ii (Seated) by Patrick Manian</a></iframe>
-    </section>
-
-    <div class="logo-wrap">
-      <img src="dist/images/badge.png" alt="PURE WAVEFORM" class="logo" />
+      <figure>
+        <img src="dist/images/waves5.gif" />
+        <figcaption>Nonsensical description of this image</figcaption>
+      </figure>
     </div>
 
-    <div class="waves">
-      <img src="dist/images/waves3.gif" />
-    </div>
+    </section>
+
+<!--     <section class="symbols">
+      <img class="symbol" src="dist/images/blue-symbol.png" alt="PURE WAVEFORM" />
+      <img class="symbol" src="dist/images/red-symbol.png" alt="PURE WAVEFORM" />
+      <img class="symbol" src="dist/images/white-symbol.png" alt="PURE WAVEFORM" />
+    </section> -->
+
+    <section class="bio">
+        <figure>
+
+        <div class="Wallop Wallop--fade">
+          <div class="Wallop-list">
+            <div class="Wallop-item Wallop-item--current">
+              <img src="dist/images/ssp-boys.jpg" alt="Sweet Synth Boys"/>
+            </div>
+            <div class="Wallop-item">
+              <img src="dist/images/ssp-boys2.jpg" alt="Sweet Synth Boys"/>
+            </div>
+            <div class="Wallop-item">
+              <img src="dist/images/ssp-boys3.jpg" alt="Sweet Synth Boys"/>
+            </div>
+            <div class="Wallop-item">
+              <img src="dist/images/ssp-boys4.jpg" alt="Sweet Synth Boys"/>
+            </div>
+          </div>
+        </div>
+
+          <figcaption>
+            Eric, a deviant yet ultimately worshipping slave of the synth has a particular knack for locating tasty raw nuggets.
+            <br><br>
+            Patrick, an egomaniacal wasteland of botched promises and trifling pleasures, takes pride delicatizing arrangements and adding pewter seasonings.
+            <br><br>
+            That’s right, its a farm to table operation run by your favorite Deviant Duo - Sweet Synth Prince Farm to Table Preserves and Evocatives Inc. Please stop in to say hello and provide feedback on your favorite products.</figcaption>
+        </figure>
+    </section>
+
+<!--     <section class="wave-revival">
+      <img src="dist/images/flashwave.gif" />
+    </section> -->
 
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <script src="dist/scripts/main.js"></script>

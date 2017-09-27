@@ -1,3 +1,8 @@
+/*
+	Animated waves based off codepen by jaromvogel
+	https://codepen.io/jaromvogel/pen/jWjWqN
+*/
+
 var x = 0;
 var offset = 0;
 var frequency = 0.15;
@@ -8,6 +13,7 @@ var waveElems = document.querySelectorAll('.sine-wave');
 var separation = 10;
 var wavelength = window.innerWidth;
 var scrollInit = false;
+var runAnimation = true;
 
 requestAnimationFrame(animate);
 
@@ -46,28 +52,28 @@ function createGraph(wave, idx) {
 	wave.setPathData(data);
 };
 	
-	
-function animate () {
-	offset += (increment / framerate);
-	for(i=0; i<waveElems.length; i++) {
-		createGraph(waveElems[i], i);
+function animate() {
+	if(runAnimation) {
+		offset += (increment / framerate);
+		for(i=0; i<waveElems.length; i++) {
+			createGraph(waveElems[i], i);
+		}
+		requestAnimationFrame(animate);	
 	}
-	requestAnimationFrame(animate);	
 }
-
-// window.onscroll = function() {
-// 	if(window.scrollY < 400 && window.scrollY > 10) {
-// 		separation = window.scrollY/10;
-// 	} else if (window.scrollY <= 10) {
-// 		seperation = 0;
-// 	}
-// };
 
 window.onscroll = function() {
 	var sy = window.scrollY;
-	if(sy<400) {
+	if(sy<370) {
 		amplitude = Math.max(sy/200, 0.05);
 		separation = Math.max(window.scrollY/10, 10);
+	}
+
+	if(sy > (window.innerHeight*1.5) && runAnimation) {
+		runAnimation = false;
+	} else if(sy <= (window.innerHeight*2) && !runAnimation){
+		runAnimation = true;
+		requestAnimationFrame(animate);
 	}
 
 	// if(sy > 0 && !scrollInit) {
@@ -100,3 +106,24 @@ window.onresize = function() {
 document.getElementById('play-pills').onclick = function() {
 	document.getElementById('pills-vid').src += '&autoplay=1';
 };
+
+//  document.addEventListener('DOMContentLoaded', function () {
+//     var simple = document.querySelector('.js_slider');
+
+//     lory(simple, {
+//         infinite: 1
+//     });
+
+//     setInterval(function() {
+//     	document.querySelector('.js_next').click();
+//     }, 5000);
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+	var wallopEl = document.querySelector('.Wallop');
+	var wallop = new Wallop(wallopEl);
+
+	setInterval(function() {
+		wallop.next();
+	}, 5000);
+});

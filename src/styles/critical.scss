@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Monoton|Raleway');
+@import 'reset';
 
-body {
-	background-color: #fff;
-	font-family: 'Raleway', sans-serif;
-	overflow-x: hidden;
-	text-align: center;
+section.splash {
+	padding: 0;
 }
 
-.wrap {
-	background-color: black;
+.splash {
+	background-color: #000;
 	height: 100vh;
+	width: 100%;
 	position: relative;
 }
 
@@ -23,19 +21,6 @@ body {
 
 .main-logo img {
 	width: 100%;
-}
-
-.main-title {
-	color: #fff;
-	font-family: 'Monoton', cursive;
-	font-size: 70px;
-	left: 0;
-	line-height: 100px;
-	position: absolute;
-	right: 0;
-	text-align: center;
-	top: calc(50vh - 50px);
-	z-index: 1;
 }
 
 .svg {

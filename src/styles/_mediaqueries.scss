@@ -1,0 +1,31 @@
+@media (min-width:768px) {
+	section {
+		padding: 100px 0;
+
+		.section-title {
+			margin: 0 auto 50px;
+		}
+
+		.section-detail {
+			line-height: 2;
+			max-width: 860px;
+			width: 60%;
+		}
+	}
+
+}
+
+@media (max-width:768px) {
+	section {
+		padding: 100px 20px;
+
+		.section-title {
+			margin: 0 auto 30px;
+		}
+
+		.section-detail {
+			line-height: 1.5;
+			width: 90%;
+		}
+	}
+}
