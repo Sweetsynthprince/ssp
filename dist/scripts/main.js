@@ -19,12 +19,7 @@ var runAnimation = true;
 requestAnimationFrame(animate);
 
 function pathFunction(val) {
-	var result = 
-		// Function to determine curve
-		// 0.2*(Math.sin(Math.sqrt(x)-$scope.offset))*x;
-		(Math.sin(Math.sqrt(val*frequency)-offset))*val*(0.1 * amplitude);
-	
-	return result;
+	return (Math.sin(Math.sqrt(val*frequency)-offset))*val*(0.1 * amplitude);
 };
 
 function createGraph(wave, idx) {
@@ -77,12 +72,6 @@ window.onscroll = function() {
 		requestAnimationFrame(animate);
 	}
 
-	// if(sy > 0 && !scrollInit) {
-	// 	scrollInit = true;
-	// 	[].map.call(document.querySelectorAll('.sine-wave'), function(el) {
-	// 		el.classList.add('sine-wave-active');
-	// 	});
-	// }
 };
 
 window.onresize = function() {
@@ -107,18 +96,6 @@ window.onresize = function() {
 document.getElementById('play-pills').onclick = function() {
 	document.getElementById('pills-vid').src += '&autoplay=1';
 };
-
-//  document.addEventListener('DOMContentLoaded', function () {
-//     var simple = document.querySelector('.js_slider');
-
-//     lory(simple, {
-//         infinite: 1
-//     });
-
-//     setInterval(function() {
-//     	document.querySelector('.js_next').click();
-//     }, 5000);
-// });
 
 document.addEventListener('DOMContentLoaded', function () {
 	var wallopEl = document.querySelector('.Wallop');

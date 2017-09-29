@@ -14,7 +14,14 @@
     <meta property="og:image" content="">
 
     <title>Pure Waveform</title>
-    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
     <script>
       !function(e){"use strict";var n=function(n,t,o){function i(e){return a.body?e():void setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var s=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=s[s.length-1]}var f=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=f.length;t--;)if(f[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
     </script>
@@ -152,11 +159,30 @@ section.splash {
     <section class="intro">
       <h2 class="section-title">We are the cult of the Sweet Synth Prince.</h2>
       <p class="section-detail">That which guides us resides in the purity of waveform. The Pure Waveform cannot be heard without ascension; in fact it cannot ever be heard - the ear is too crass. Yet, in an act of grandmotherly kindness, its been distilled down by One plugged in. Waveforms, mixed to taste, that point towards the darkness of the truth which you seek can be found herein. Via synth jangle musicantes you can pass through the gate of the first barrier. Face the facts, whether you realize it or not, you've been taking <span id="play-pills" class="play-pills">These Pills</span> your whole life.</p>
-      <iframe id="pills-vid" width="560" height="315" src="https://www.youtube.com/embed/8Ab0Dp5JQxk?rel=0" frameborder="0" allowfullscreen></iframe>
+      <div class="yt-outer-container">
+        <div class="yt-container">
+          <iframe id="pills-vid" width="800" height="450" src="https://www.youtube.com/embed/8Ab0Dp5JQxk?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
     </section>
 
     <section class="music">
-      <iframe style="border: 0; width: 350px; height: 753px;" src="https://bandcamp.com/EmbeddedPlayer/album=1606811957/size=large/bgcol=ffffff/linkcol=ed5541/transparent=true/" seamless><a href="http://sweetsynthprince.bandcamp.com/album/sweet-synth-prince">Sweet Synth Prince by Sweet Synth Prince</a></iframe>
+      <div class="bc-outer-container">
+        <div class="bc-container">
+            <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1606811957/size=large/bgcol=ffffff/linkcol=ed5541/transparent=true/" seamless><a href="http://sweetsynthprince.bandcamp.com/album/sweet-synth-prince">Sweet Synth Prince by Sweet Synth Prince</a></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="waveform">
+      <h2 class="section-title">Pure Waveform is the definitive sacrality, the highest godhead.</h2>
+
+      <div class="gifs-wrap">
+        <figure>
+          <img src="dist/images/waves1.gif" />
+          <figcaption>Nonsensical description of this image</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="connect">
@@ -167,71 +193,31 @@ section.splash {
       <div id="mc_embed_signup">
         <form action="//sweetsynthprince.us16.list-manage.com/subscribe/post?u=d0e7983593821524e3b06fcf9&amp;id=ba580ef99b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
-
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d0e7983593821524e3b06fcf9_ba580ef99b" tabindex="-1" value=""></div>
             <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
+          </div>
         </form>
       </div>
-      <!--End mc_embed_signup--> 
+      <!--End mc_embed_signup-->
 
-      <a class="music-links" href="">Spotify</a>
-      <a class="music-links" href="">Bandcamp</a>
-      <a class="music-links" href="">YouTube</a>
+      <a class="music-links" target="_blank" href="">Spotify</a>
+      <a class="music-links" target="_blank" href="https://sweetsynthprince.bandcamp.com/">Bandcamp</a>
+      <a class="music-links" target="_blank" href="https://www.youtube.com/channel/UCxSUdVZg52toGCgXV6fZxng/featured">YouTube</a>
     </section>
-
-    <!-- <div class="peek-a-boo">&nbsp;</div> -->
 
     <section class="waveform">
-      <h2 class="section-title">Pure Waveform is the definitive sacrality, the highest godhead.</h2>
-
-<!--       <div class="gifs-wrap">
-        <div class="gifs-row">
-          <figure class="gif">
-            <img src="dist/images/waves1.gif" />
-            <figcaption>Nonsensical description of this image</figcaption>
-          </figure><figure class="gif">
-            <img src="dist/images/fourier.gif" />
-            <figcaption>Nonsensical description of this image</figcaption>
-          </figure>
-        </div>
-        <div class="gifs-row">
-          <figure class="gif">
-            <img src="dist/images/waves2.gif" />
-            <figcaption>Nonsensical description of this image</figcaption>
-          </figure><figure class="gif">
+        <div class="gifs-wrap">
+          <figure>
             <img src="dist/images/fourier2.gif" />
-            <figcaption>Nonsensical description of this image</figcaption>
+            <figcaption>
+              “God damn that was some good fious gras fennel pâté. Maybe the best you've had. You got a drop of that artisan rhubarb/mustard seed preserve on your chinos, but fuck'em. They are a relic from when you were barely making 6 figures. Maybe you should send your regards to the chef? Nah - you are paying $800 for the pleasure. He can enjoy his cut of the tip. 
+              <br><br>Your date has been in the bathroom for a little too long. Was it something you said? Couldn't be - your non offensive jokes were on point. A gentle mixture of safe, recycled garbage and a few direct quotes from whatever's hot on netflix made the evening a steamy and banal affair . 
+              <br><br>Maybe you should have complemented the chef? No - can't be; she grew up in Wisconsin, on a fucking farm. She hates all this farm-to-table bullshit. The margins are too low; putting the old man out of business. Maybe the old man should have read a god damn book or two. At least a factory farm would't have left his daughter with 100k of loans and an art history degree she will never use.</figcaption>
           </figure>
         </div>
-      </div> -->
-
-    <div class="gifs-wrap">
-      <figure>
-        <img src="dist/images/waves1.gif" />
-        <figcaption>Nonsensical description of this image</figcaption>
-      </figure>
-
-      <figure>
-        <img src="dist/images/fourier2.gif" />
-        <figcaption>Nonsensical description of this image</figcaption>
-      </figure>
-
-      <figure>
-        <img src="dist/images/waves5.gif" />
-        <figcaption>Nonsensical description of this image</figcaption>
-      </figure>
-    </div>
-
     </section>
-
-<!--     <section class="symbols">
-      <img class="symbol" src="dist/images/blue-symbol.png" alt="PURE WAVEFORM" />
-      <img class="symbol" src="dist/images/red-symbol.png" alt="PURE WAVEFORM" />
-      <img class="symbol" src="dist/images/white-symbol.png" alt="PURE WAVEFORM" />
-    </section> -->
 
     <section class="bio">
         <figure>
@@ -262,9 +248,12 @@ section.splash {
         </figure>
     </section>
 
-<!--     <section class="wave-revival">
-      <img src="dist/images/flashwave.gif" />
-    </section> -->
+    <section class="waveform">
+        <figure>
+          <img src="dist/images/waves5.gif" />
+          <figcaption>Nonsensical description of this image</figcaption>
+        </figure>
+    </section>
 
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <script src="dist/scripts/main.js"></script>

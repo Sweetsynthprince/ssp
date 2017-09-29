@@ -1,9 +1,14 @@
 @media (min-width:768px) {
+	body {
+		background-attachment: fixed;
+	}
+
 	section {
 		padding: 100px 0;
 
 		.section-title {
 			margin: 0 auto 50px;
+			font-size: 32px;
 		}
 
 		.section-detail {
@@ -11,21 +16,41 @@
 			max-width: 860px;
 			width: 60%;
 		}
+
+		&.waveform .section-title {
+			max-width: 35ch;
+		}
+
+		&.intro .section-detail {
+			margin-bottom: 100px;
+		}
 	}
 
 }
 
 @media (max-width:768px) {
 	section {
-		padding: 100px 20px;
+		padding: 50px 20px;
 
 		.section-title {
 			margin: 0 auto 30px;
+			font-size: 26px;
 		}
 
 		.section-detail {
 			line-height: 1.5;
-			width: 90%;
 		}
+
+		&.intro .section-detail {
+			margin-bottom: 50px;
+		}
+
+		&.connect {
+			background-image: url(../../dist/images/gate.jpg);
+			background-size: cover;
+			background-blend-mode: multiply;
+			background-position: center;
+		}
+
 	}
 }
