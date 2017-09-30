@@ -8,10 +8,6 @@
 	GLOBAL
 **************************************************/
 body {
-	background-color: #000;
-	background-image: url('../../dist/images/gate.jpg');
-	background-position: top center;
-	background-size: cover;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 }
@@ -79,7 +75,7 @@ input {
 	}
 
 	.yt-outer-container {
-		max-width: 800px;
+		max-width: 700px;
 		margin: 0 auto;
 
 		.yt-container {
@@ -107,11 +103,9 @@ input {
 	MUSIC
 **************************************************/
 .music {
-	// background-image: url('../../dist/images/heat_plate.png');
 	background-color: #ed5541;
 	background-image: url('../../dist/images/white-logo-transparent.png');
 	background-size: 14.2857143%;
-	// animation: scrollbg 10s infinite linear;
 
 	.bc-outer-container {
 		max-width: 500px;
@@ -142,7 +136,11 @@ input {
 	CONNECT
 **************************************************/
 .connect {
+	background-blend-mode: multiply;
 	background-color: rgba(0,0,0,.7);
+	background-image: url('../../dist/images/gate.jpg');
+	background-position: top center;
+	background-size: cover;
 
 	.music-links {
 		color: #ed5541;
@@ -197,7 +195,6 @@ input {
 		width: 100%;
 
 		figure {
-			margin:0 0 50px;
 
 			img {
 				border: 2px solid #eee;
@@ -210,6 +207,70 @@ input {
 				text-align: left;
 			}
 		}
+	}
+
+	.symbols-wrap {
+		position: relative;
+		width: 100%;
+		height: 350px;
+		margin-bottom: 50px;
+
+		[class^="symbol-item"] {
+			background-size: cover;
+			width: 140px;
+			height: 350px;
+			position: absolute;
+			top: 0;
+			left: calc(50% - 70px);
+			// animation: rotate 3s linear infinite;
+			// animation-timing-function: linear;
+			// animation-iteration-count: infinite;
+			// animation-duration: 5s, 500ms;
+	
+			// @for $i from 1 through 6 {
+			// 	&:nth-child(#{$i}) {
+			// 		animation-delay: $i * 300ms;
+			// 		@if $i%2 != 0 {
+			// 			animation-name: leftright, pulse;
+			// 			background-image: url('../../dist/images/red-symbol.png');
+			// 		} @else {
+			// 			animation-name: rightleft, pulse;
+			// 			background-image: url('../../dist/images/blue-symbol.png');
+			// 		}
+			// 	}
+			// }
+		}
+
+
+
+		// &:nth-child(odd) {
+		// 	// left: calc(50% - 105px);
+		// 	// left: calc(50% - 40px);
+		// }
+
+		.symbol-item--red {
+			background-image: url('../../dist/images/red-symbol.png');
+			animation: rotateleft 3s linear infinite;
+		}
+
+		.symbol-item--white {
+			background-image: url('../../dist/images/white-symbol.png');
+		}
+
+		.symbol-item--blue {
+			background-image: url('../../dist/images/blue-symbol.png');
+			animation: rotate 3s linear infinite;
+		}
+
+		// .symbol-item--blue {
+		// 	// left: calc(50% + 35px);
+		// 	// left: calc(50% - 30px);
+		// 	background-image: url('../../dist/images/blue-symbol.png');
+		// 	animation-name: leftright, pulse;
+		// 	animation-duration: 5s, 500ms;
+		// 	animation-timing-function: linear;
+		// 	animation-iteration-count: infinite;
+		// }
 	}
 
 }

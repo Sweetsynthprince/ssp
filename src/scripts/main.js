@@ -14,6 +14,10 @@ var separation = 10;
 var wavelength = window.innerWidth;
 var scrollInit = false;
 var runAnimation = true;
+var symbolsTop;
+var	redSymbol;
+var	whiteSymbol;
+var	blueSymbol;
 
 requestAnimationFrame(animate);
 
@@ -58,18 +62,32 @@ function animate() {
 }
 
 window.onscroll = function() {
-	var sy = window.scrollY;
-	if(sy<370) {
-		amplitude = Math.max(sy/200, 0.05);
+	var scrollY = window.scrollY;
+	var windowHeight = window.innerHeight;
+	var windowWidth = window.innerWidth;
+	if(!symbolsTop) symbolsTop = document.getElementById('symbols').offsetTop;
+
+	if(scrollY<370) {
+		amplitude = Math.max(scrollY/200, 0.05);
 		separation = Math.max(window.scrollY/10, 10);
 	}
 
-	if(sy > (window.innerHeight*1.5) && runAnimation) {
+	if(scrollY > (windowHeight*1.5) && runAnimation) {
 		runAnimation = false;
-	} else if(sy <= (window.innerHeight*2) && !runAnimation){
+	} else if(scrollY <= (windowHeight*2) && !runAnimation){
 		runAnimation = true;
 		requestAnimationFrame(animate);
 	}
+
+	// if(scrollY > (symbolsTop-windowHeight) && scrollY < (symbolsTop+windowHeight)) {
+	// 	var divisor = windowHeight*0.05;
+	// 	var shift = Math.max( (scrollY-(symbolsTop-windowHeight))/divisor, .1);
+	// 	redSymbol.style.left = 'calc(50% - '+(40-shift)+'px)';
+	// 	// whiteSymbol.style.left = 'calc(50% - '+(35-shift)+'px)';
+	// 	blueSymbol.style.left = 'calc(50% - '+(30+shift)+'px)';
+	// 	// shift+(windowWidth*0.02);
+	// 	// shift+(windowWidth*0.04); 
+	// }
 
 };
 
@@ -99,6 +117,9 @@ document.getElementById('play-pills').onclick = function() {
 document.addEventListener('DOMContentLoaded', function () {
 	var wallopEl = document.querySelector('.Wallop');
 	var wallop = new Wallop(wallopEl);
+	redSymbol = document.querySelector('.symbol-item--red');
+	whiteSymbol = document.querySelector('.symbol-item--white');
+	blueSymbol = document.querySelector('.symbol-item--blue');
 
 	setInterval(function() {
 		wallop.next();

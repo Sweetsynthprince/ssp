@@ -32,43 +32,113 @@
 
 @-webkit-keyframes rotate {
   0% {
-    transform: rotateY(0deg); }
+    transform: rotateY(0deg);
+    top: 10px; }
   50% {
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    top: 0; }
   100% {
-    transform: rotateY(0deg); } }
+    transform: rotateY(0deg);
+    top: 10px; } }
 
 @-moz-keyframes rotate {
   0% {
-    transform: rotateY(0deg); }
+    transform: rotateY(0deg);
+    top: 10px; }
   50% {
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    top: 0; }
   100% {
-    transform: rotateY(0deg); } }
+    transform: rotateY(0deg);
+    top: 10px; } }
 
 @-ms-keyframes rotate {
   0% {
-    transform: rotateY(0deg); }
+    transform: rotateY(0deg);
+    top: 10px; }
   50% {
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    top: 0; }
   100% {
-    transform: rotateY(0deg); } }
+    transform: rotateY(0deg);
+    top: 10px; } }
 
 @-o-keyframes rotate {
   0% {
-    transform: rotateY(0deg); }
+    transform: rotateY(0deg);
+    top: 10px; }
   50% {
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    top: 0; }
   100% {
-    transform: rotateY(0deg); } }
+    transform: rotateY(0deg);
+    top: 10px; } }
 
 @keyframes rotate {
   0% {
-    transform: rotateY(0deg); }
+    transform: rotateY(0deg);
+    top: 10px; }
   50% {
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    top: 0; }
   100% {
-    transform: rotateY(0deg); } }
+    transform: rotateY(0deg);
+    top: 10px; } }
+
+@-webkit-keyframes rotateleft {
+  0% {
+    transform: rotateY(90deg);
+    top: 10px; }
+  50% {
+    transform: rotateY(270deg);
+    top: 0; }
+  100% {
+    transform: rotateY(90deg);
+    top: 10px; } }
+
+@-moz-keyframes rotateleft {
+  0% {
+    transform: rotateY(90deg);
+    top: 10px; }
+  50% {
+    transform: rotateY(270deg);
+    top: 0; }
+  100% {
+    transform: rotateY(90deg);
+    top: 10px; } }
+
+@-ms-keyframes rotateleft {
+  0% {
+    transform: rotateY(90deg);
+    top: 10px; }
+  50% {
+    transform: rotateY(270deg);
+    top: 0; }
+  100% {
+    transform: rotateY(90deg);
+    top: 10px; } }
+
+@-o-keyframes rotateleft {
+  0% {
+    transform: rotateY(90deg);
+    top: 10px; }
+  50% {
+    transform: rotateY(270deg);
+    top: 0; }
+  100% {
+    transform: rotateY(90deg);
+    top: 10px; } }
+
+@keyframes rotateleft {
+  0% {
+    transform: rotateY(90deg);
+    top: 10px; }
+  50% {
+    transform: rotateY(270deg);
+    top: 0; }
+  100% {
+    transform: rotateY(90deg);
+    top: 10px; } }
 
 @-webkit-keyframes headercolor {
   0%, 100% {
@@ -100,149 +170,7 @@
   50% {
     color: #ed5541; } }
 
-@-webkit-keyframes scrollbg {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
-
-@-moz-keyframes scrollbg {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
-
-@-ms-keyframes scrollbg {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
-
-@-o-keyframes scrollbg {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
-
-@keyframes scrollbg {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
-
-@-webkit-keyframes strobe {
-  0%, 100% {
-    opacity: 1; }
-  10% {
-    opacity: 1; }
-  10.1% {
-    opacity: 0; }
-  10.7% {
-    opacity: 1; }
-  13% {
-    opacity: 1; }
-  13.1% {
-    opacity: 0; }
-  13.7% {
-    opacity: 1; } }
-
-@-moz-keyframes strobe {
-  0%, 100% {
-    opacity: 1; }
-  10% {
-    opacity: 1; }
-  10.1% {
-    opacity: 0; }
-  10.7% {
-    opacity: 1; }
-  13% {
-    opacity: 1; }
-  13.1% {
-    opacity: 0; }
-  13.7% {
-    opacity: 1; } }
-
-@-ms-keyframes strobe {
-  0%, 100% {
-    opacity: 1; }
-  10% {
-    opacity: 1; }
-  10.1% {
-    opacity: 0; }
-  10.7% {
-    opacity: 1; }
-  13% {
-    opacity: 1; }
-  13.1% {
-    opacity: 0; }
-  13.7% {
-    opacity: 1; } }
-
-@-o-keyframes strobe {
-  0%, 100% {
-    opacity: 1; }
-  10% {
-    opacity: 1; }
-  10.1% {
-    opacity: 0; }
-  10.7% {
-    opacity: 1; }
-  13% {
-    opacity: 1; }
-  13.1% {
-    opacity: 0; }
-  13.7% {
-    opacity: 1; } }
-
-@keyframes strobe {
-  0%, 100% {
-    opacity: 1; }
-  10% {
-    opacity: 1; }
-  10.1% {
-    opacity: 0; }
-  10.7% {
-    opacity: 1; }
-  13% {
-    opacity: 1; }
-  13.1% {
-    opacity: 0; }
-  13.7% {
-    opacity: 1; } }
-
-@-webkit-keyframes borderflash {
-  from {
-    border-color: #75c7f0; }
-  to {
-    border-color: #ed5541; } }
-
-@-moz-keyframes borderflash {
-  from {
-    border-color: #75c7f0; }
-  to {
-    border-color: #ed5541; } }
-
-@-ms-keyframes borderflash {
-  from {
-    border-color: #75c7f0; }
-  to {
-    border-color: #ed5541; } }
-
-@-o-keyframes borderflash {
-  from {
-    border-color: #75c7f0; }
-  to {
-    border-color: #ed5541; } }
-
-@keyframes borderflash {
-  from {
-    border-color: #75c7f0; }
-  to {
-    border-color: #ed5541; } }
-
 @media (min-width: 768px) {
-  body {
-    background-attachment: fixed; }
   section {
     padding: 100px 0; }
     section .section-title {
@@ -255,7 +183,9 @@
     section.waveform .section-title {
       max-width: 35ch; }
     section.intro .section-detail {
-      margin-bottom: 100px; } }
+      margin-bottom: 100px; }
+    section.connect {
+      background-attachment: fixed; } }
 
 @media (max-width: 768px) {
   section {
@@ -266,12 +196,7 @@
     section .section-detail {
       line-height: 1.5; }
     section.intro .section-detail {
-      margin-bottom: 50px; }
-    section.connect {
-      background-image: url(../../dist/images/gate.jpg);
-      background-size: cover;
-      background-blend-mode: multiply;
-      background-position: center; } }
+      margin-bottom: 50px; } }
 
 /**
  * wallop.css
@@ -381,10 +306,6 @@
 	GLOBAL
 **************************************************/
 body {
-  background-color: #000;
-  background-image: url("../../dist/images/gate.jpg");
-  background-position: top center;
-  background-size: cover;
   font-family: 'Raleway', sans-serif;
   text-align: center; }
 
@@ -430,7 +351,7 @@ input {
     animation: headercolor 2s infinite linear;
     color: #fff; }
   .intro .yt-outer-container {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto; }
     .intro .yt-outer-container .yt-container {
       position: relative;
@@ -474,7 +395,11 @@ input {
 	CONNECT
 **************************************************/
 .connect {
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url("../../dist/images/gate.jpg");
+  background-position: top center;
+  background-size: cover; }
   .connect .music-links {
     color: #ed5541;
     margin: 0 10px; }
@@ -513,15 +438,33 @@ input {
     margin: 0 auto;
     max-width: 500px;
     width: 100%; }
-    .waveform .gifs-wrap figure {
-      margin: 0 0 50px; }
-      .waveform .gifs-wrap figure img {
-        border: 2px solid #eee;
-        width: 100%; }
-      .waveform .gifs-wrap figure figcaption {
-        color: #333;
-        margin: 15px 0 0;
-        text-align: left; }
+    .waveform .gifs-wrap figure img {
+      border: 2px solid #eee;
+      width: 100%; }
+    .waveform .gifs-wrap figure figcaption {
+      color: #333;
+      margin: 15px 0 0;
+      text-align: left; }
+  .waveform .symbols-wrap {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 50px; }
+    .waveform .symbols-wrap [class^="symbol-item"] {
+      background-size: cover;
+      width: 140px;
+      height: 350px;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 70px); }
+    .waveform .symbols-wrap .symbol-item--red {
+      background-image: url("../../dist/images/red-symbol.png");
+      animation: rotateleft 3s linear infinite; }
+    .waveform .symbols-wrap .symbol-item--white {
+      background-image: url("../../dist/images/white-symbol.png"); }
+    .waveform .symbols-wrap .symbol-item--blue {
+      background-image: url("../../dist/images/blue-symbol.png");
+      animation: rotate 3s linear infinite; }
 
 /**************************************************
 	BIO SECTION
