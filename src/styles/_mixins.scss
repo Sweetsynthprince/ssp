@@ -1,7 +1,5 @@
 
 @mixin colorwaveframes() {
-	// $start: ($idx+1)*5%;
-	// $finish: $start+40%;
 	0% ,100% { stroke: #75c7f0; }
 	50% { stroke: #ed5541; }
 }
@@ -12,61 +10,10 @@
 }
 
 @mixin rotateframes($val1, $val2, $val3) {
-	0% {transform: rotateY($val1); top:10px;}
-	50% {transform: rotateY($val2); top:0;}
-	100% {transform: rotateY($val3); top:10px;}
+	0% {transform: rotateY($val1);}
+	50% {transform: rotateY($val2);}
+	100% {transform: rotateY($val3);}
 }
-
-// @mixin leftrightframes() {
-// 	0%, 100% {
-// 		left: 0;
-// 	}
-// 	50% {
-// 		left: calc(100% - 70px);
-// 	}
-// }
-
-// @mixin rightleftframes() {
-// 	0%, 100% {
-// 		left: calc(100% - 70px);
-// 	}
-// 	50% {
-// 		left: 0;
-// 	}
-// }
-
-// @mixin pulseframes() {
-// 	from { opacity:1; }
-// 	to { opacity: 0; }
-// }
-
-// @mixin scrollbgframes() {
-// 	from { background-position: 0 0; }
-// 	to { background-position: 100% 0; }
-// }
-
-// @mixin strobeFrames() {
-// 	0%, 100% { opacity: 1; }
-// 	10% { opacity: 1; }
-// 	10.1% { opacity: 0; }
-// 	10.7% { opacity: 1; }
-// 	13% { opacity: 1; }
-// 	13.1% { opacity: 0; }
-// 	13.7% { opacity: 1; }
-// }
-
-// @mixin borderflashFrames() {
-// 	from { border-color: #75c7f0; }
-// 	to { border-color: #ed5541; }
-// }
-
-// @for $i from 0 through 9 {
-// 	@-webkit-keyframes colorwave#{$i} { @include colorwaveframes($i); }
-// 	@-moz-keyframes colorwave#{$i} { @include colorwaveframes($i); }
-// 	@-ms-keyframes colorwave#{$i} { @include colorwaveframes($i); }
-// 	@-o-keyframes colorwave#{$i} { @include colorwaveframes($i); }
-// 	@keyframes colorwave#{$i} { @include colorwaveframes($i); }
-// }
 
 @-webkit-keyframes colorwave { @include colorwaveframes(); }
 @-moz-keyframes colorwave { @include colorwaveframes(); }
@@ -74,63 +21,14 @@
 @-o-keyframes colorwave { @include colorwaveframes(); }
 @keyframes colorwave { @include colorwaveframes(); }
 
-@-webkit-keyframes rotate { @include rotateframes(0deg, 180deg, 0deg); }
-@-moz-keyframes rotate { @include rotateframes(0deg, 180deg, 0deg); }
-@-ms-keyframes rotate { @include rotateframes(0deg, 180deg, 0deg); }
-@-o-keyframes rotate { @include rotateframes(0deg, 180deg, 0deg); }
-@keyframes rotate { @include rotateframes(0deg, 180deg, 0deg); }
-
-@-webkit-keyframes rotateleft { @include rotateframes(90deg, 270deg, 90deg); }
-@-moz-keyframes rotateleft { @include rotateframes(90deg, 270deg, 90deg); }
-@-ms-keyframes rotateleft { @include rotateframes(90deg, 270deg, 90deg); }
-@-o-keyframes rotateleft { @include rotateframes(90deg, 270deg, 90deg); }
-@keyframes rotateleft { @include rotateframes(90deg, 270deg, 90deg); }
+@-webkit-keyframes rotate { @include rotateframes(0deg, 180deg, 360deg); }
+@-moz-keyframes rotate { @include rotateframes(0deg, 180deg, 360deg); }
+@-ms-keyframes rotate { @include rotateframes(0deg, 180deg, 360deg); }
+@-o-keyframes rotate { @include rotateframes(0deg, 180deg, 360deg); }
+@keyframes rotate { @include rotateframes(0deg, 180deg, 360deg); }
 
 @-webkit-keyframes headercolor { @include headercolorframes(); }
 @-moz-keyframes headercolor { @include headercolorframes(); }
 @-ms-keyframes headercolor { @include headercolorframes(); }
 @-o-keyframes headercolor { @include headercolorframes(); }
 @keyframes headercolor { @include headercolorframes(); }
-
-// @-webkit-keyframes leftright { @include leftrightframes(); }
-// @-moz-keyframes leftright { @include leftrightframes(); }
-// @-ms-keyframes leftright { @include leftrightframes(); }
-// @-o-keyframes leftright { @include leftrightframes(); }
-// @keyframes leftright { @include leftrightframes(); }
-
-// @-webkit-keyframes rightleft { @include rightleftframes(); }
-// @-moz-keyframes rightleft { @include rightleftframes(); }
-// @-ms-keyframes rightleft { @include rightleftframes(); }
-// @-o-keyframes rightleft { @include rightleftframes(); }
-// @keyframes rightleft { @include rightleftframes(); }
-
-// @-webkit-keyframes pulse { @include pulseframes(); }
-// @-moz-keyframes pulse { @include pulseframes(); }
-// @-ms-keyframes pulse { @include pulseframes(); }
-// @-o-keyframes pulse { @include pulseframes(); }
-// @keyframes pulse { @include pulseframes(); }
-
-// @-webkit-keyframes scrollbg { @include scrollbgframes(); }
-// @-moz-keyframes scrollbg { @include scrollbgframes(); }
-// @-ms-keyframes scrollbg { @include scrollbgframes(); }
-// @-o-keyframes scrollbg { @include scrollbgframes(); }
-// @keyframes scrollbg { @include scrollbgframes(); }
-
-// @-webkit-keyframes strobe { @include strobeFrames(); }
-// @-moz-keyframes strobe { @include strobeFrames(); }
-// @-ms-keyframes strobe { @include strobeFrames(); }
-// @-o-keyframes strobe { @include strobeFrames(); }
-// @keyframes strobe { @include strobeFrames(); }
-
-// @for $x from 0 through 9 {
-// 	.wave#{$x} {
-// 		// animation: colorwave#{$x} 2s infinite linear;
-// 		animation-delay: $x*50ms;
-// 	}
-// }
-
-// @-webkit-keyframes borderflash { @include borderflashFrames(); }
-// @-moz-keyframes borderflash { @include borderflashFrames(); }
-// @-ms-keyframes borderflash { @include borderflashFrames(); }
-// @-o-keyframes borderflash { @include borderflashFrames(); }
-// @keyframes borderflash { @include borderflashFrames(); }
