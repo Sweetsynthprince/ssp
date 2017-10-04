@@ -123,5 +123,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	setInterval(function() {
 		wallop.next();
-	}, 5000);
+	}, 1000);
 });
