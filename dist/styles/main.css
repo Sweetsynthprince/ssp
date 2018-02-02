@@ -305,11 +305,11 @@ input {
   background-image: url("../../dist/images/white-logo-transparent.png");
   background-size: 14.2857143%; }
   .music .bc-outer-container {
-    max-width: 500px;
+    max-width: 360px;
     margin: 0 auto; }
     .music .bc-outer-container .bc-container {
       position: relative;
-      padding-bottom: 190%;
+      padding-bottom: 126%;
       height: 0;
       overflow: hidden; }
       .music .bc-outer-container .bc-container iframe,
